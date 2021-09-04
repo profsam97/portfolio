@@ -1,0 +1,8 @@
+version: "3"
+services:
+  nginx:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "3050:80"
