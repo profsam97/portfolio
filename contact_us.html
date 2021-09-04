@@ -40,7 +40,7 @@
                   <a class="nav-link text-dark" href="resume.html">RESUME</a>
               </li>
           </ul>
-          <footer id="mainFooter" class="text-center p-4 mt-5 pt-5 text-black-50">
+          <footer id="mainFooter" class="text-center p-4 mt-2 pt-5 text-black-50">
             <div class="container">
               <div class="row">
                 <div class="col">
@@ -55,21 +55,25 @@
                     <div class="card-text">Follow</div>         
                     <div class="d-flex justify-align-content">
                       <div class="p-4">
-                        <a href="facebook.com">
+                        <a href="facebook.com"  class="anchor">
                           <i class="fab fa-facebook fa-2x"></i>
                         </a>
                       </div>
                       <div class="p-4"> 
-                        <a href="twitter.com">
+                        <a href="twitter.com"  class="anchor">
                         <i class="fab fa-twitter fa-2x"></i>
                       </a>
                     </div>
                       <div class="p-4">
-                        <a href="instagram.com">
+                        <a href="instagram.com"  class="anchor">
                           <i class="fab fa-instagram fa-2x"></i>
                         </a>
                       </div>
                     </div>
+                    <h6 class="h5 mb-4">Check my repository </h6>
+                    <a href="" class="anchor">
+                 <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a> 
                   </div>
                 </div>
                 </div>
@@ -86,17 +90,17 @@
                 </h4>
                 <hr>
                 <div class="row id">
-                      <form action="#" class="form" method="post">
+                      <form  name="contact1" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                           <div class="form-row m-5 p-4">
                 <div class="col">
                   <div class="form-group">
                     <div class="input-group input-group-lg">
                       <div class="input-group-prepend">
-                        <span class="input-group-text bg-dark  text-white">
+                        <span class="input-group-text bg-light  text-dark">
                           <i class="fas fa-user"></i>
                         </span>
                       </div>
-                      <input type="text" class="form-control  text-white" placeholder="Name">
+                      <input type="text" name="username" class="form-control   text-dark" placeholder="Name">
                     </div>
                   </div>
                 </div>
@@ -106,25 +110,24 @@
                   <div class="form-group">
                     <div class="input-group input-group-lg">
                       <div class="input-group-prepend">
-                        <span class="input-group-text bg-dark  text-white">
+                        <span class="input-group-text bg-light  text-dark">
                           <i class="fas fa-envelope"></i>
                         </span>
                       </div>
-                      <input type="email" class="form-control  text-white" placeholder="Email">
+                      <input type="email" name="email" class="form-control  text-dark" placeholder="Email">
                     </div>
-                  </div>
-          
-               
+                  </div>        
+                <div data-netlify-recaptcha="true"></div>
                 </div>
                  <div class="col-md-12">
                   <div class="form-group">
                     <div class="input-group input-group-lg">
                       <div class="input-group-prepend">
-                        <span class="input-group-text  bg-dark text-white">
+                        <span class="input-group-text  bg-light text-dark">
                           <i class="fas fa-pencil-alt"></i>
                         </span>
                       </div>
-                      <textarea class="form-control  text-white" placeholder="Message"></textarea>
+                      <textarea name="message" class="form-control  text-dark" placeholder="Message"></textarea>
                     </div>
                   </div>
                 </div>
@@ -149,31 +152,33 @@
             </h4>
             <hr>
             <div class="row id">
-                  <form action="#" class="form" method="post">
+                  <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" >
                       <div class="form-row m-2 p-2">
             <div class="col">
               <div class="form-group">
                 <div class="input-group input-group-lg">
                   <div class="input-group-prepend">
-                    <span class="input-group-text bg-dark  text-white">
+                    <span class="input-group-text bg-light  text-dark">
                       <i class="fas fa-user"></i>
                     </span>
                   </div>
-                  <input type="text" class="form-control  text-white" placeholder="Name">
+                  <input type="text" name="username" class="form-control  text-dark" placeholder="Name">
                 </div>
               </div>
             </div>
+            <div data-netlify-recaptcha="true"></div>
+
             <div class="col-md-6">
              
       
               <div class="form-group">
                 <div class="input-group input-group-lg">
                   <div class="input-group-prepend">
-                    <span class="input-group-text bg-dark  text-white">
+                    <span class="input-group-text bg-light  text-dark">
                       <i class="fas fa-envelope"></i>
                     </span>
                   </div>
-                  <input type="email" class="form-control  text-white" placeholder="Email">
+                  <input type="email" name="email" class="form-control  text-dark" placeholder="Email">
                 </div>
               </div>
       
@@ -183,11 +188,11 @@
               <div class="form-group">
                 <div class="input-group input-group-lg">
                   <div class="input-group-prepend">
-                    <span class="input-group-text  bg-dark text-white">
+                    <span class="input-group-text  bg-light text-dark">
                       <i class="fas fa-pencil-alt"></i>
                     </span>
                   </div>
-                  <textarea class="form-control  text-white" placeholder="Message"></textarea>
+                  <textarea name="message" class="form-control  text-dark" placeholder="Message"></textarea>
                 </div>
               </div>
             </div>
@@ -234,6 +239,7 @@
         });
       }
     });
+   
   </script>
   <style>
     .whit {
@@ -276,6 +282,10 @@
 }
 body{
   overflow-x: hidden;
+}
+.anchor{
+  text-decoration: none !important;
+  color: inherit;
 }
   </style>
 </body>
