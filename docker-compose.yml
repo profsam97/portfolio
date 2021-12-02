@@ -1,8 +1,9 @@
 version: "3"
 services:
   nginx:
-    build:
-      dockerfile: Dockerfile
-      context: .
+    image: nginx
     ports:
-      - "3050:80"
+      - 9000:80
+    volumes: 
+      - .:/usr/share/nginx/html
+

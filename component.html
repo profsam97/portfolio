@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+        Tooltip on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+        Tooltip on left
+      </button>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <strong>Hello</strong>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, facere.
+      </div>
+      
+      <script>
+        // var alertList = document.querySelectorAll('.alert');
+        // alertList.forEach(function (alert) {
+        //   new bootstrap.Alert(alert)
+        // })
+      </script>
+      
+
+
+<div class="position-fixed bottom-0 end-0  p-3" style="z-index: 11">
+    <div id="liveToast" data-bs-autohide="false" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="images/person1.jpg" class="rounded me-2 w-25" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" onclick="hideToast()" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+</div>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+  Tooltip with HTML
+</button>
+<div class="container">
+  <div class="row row-cols-4">
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col-6">Column</div>
+    <div class="col">Column</div>
+  </div>
+</div>
+<nav id="navbar-example2" class="navbar  bg-light sticky-top px-3">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#fat">@fat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sam">@sam</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#smith">@smith</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#jones">@jones</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#lamb">@lamb</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#json">@json</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#light">@light</a>
+</li><li class="nav-item">
+  <a class="nav-link" href="#real">@real</a>
+</li>
+    </ul>
+</nav>
+<!-- <button type="button" onclick="showToast()" class="btn btn-secondary" id="liveToastBtn">Show live toast</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" data-bs-autohide="false" class="toast align-items-center text-white bg-secondary border-0"  aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div> -->
+
+<!-- Call this script after bootstrap.bundle.min.js CDN -->
+<script>
+  function showToast() {
+    var toastDOMElement = document.getElementById("liveToast");
+    var myToast = new bootstrap.Toast(toastDOMElement);
+    myToast.show();
+  }
+</script>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <div class="" id="fat">
+    <h4>@fat</h4>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quis eius saepe officiis, doloremque nisi sit doloribus provident? Laboriosam, provident!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptatibus dolor praesentium temporibus ullam, ipsa sequi nisi error illum atque omnis tempora laboriosam facere, necessitatibus quas dignissimos! In magni earum nam vitae corrupti obcaecati alias neque. Commodi, placeat. Voluptatibus, amet est architecto voluptatem officiis nemo. Natus unde commodi quia pariatur!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vero odit doloremque repellendus debitis officia fuga sapiente, animi labore? Repudiandae reprehenderit, est odit quisquam optio vero. Nihil iste molestiae expedita modi ducimus ab dolor, consequuntur consequatur dolorem iusto odit fugit, saepe nobis architecto, dignissimos nam unde quia doloribus quod laboriosam asperiores. Facere aliquid ut dignissimos laboriosam suscipit eaque, at exercitationem, cupiditate odio voluptate possimus ab culpa tempora fugit quae. Voluptas accusamus id excepturi sunt doloremque unde magnam labore at eveniet delectus quis corporis, fuga nesciunt illum veritatis nostrum facilis officiis eius architecto hic maiores cum omnis. Aliquid natus nobis numquam!
+  </div>
+  <div class="" id="sam">
+    <h4>@sam</h4>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quis eius saepe officiis, doloremque nisi sit doloribus provident? Laboriosam, provident!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, consectetur tempore possimus saepe ad rerum veritatis temporibus perferendis soluta rem excepturi corporis quaerat maxime nisi quo molestiae itaque molestias quia? Odit perspiciatis fuga velit, similique soluta rerum laboriosam ad maiores necessitatibus non quas esse. Nisi, aspernatur qui. Quas, inventore officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis sit mollitia. Laborum voluptatum quos sit ipsam non facere incidunt temporibus recusandae minus a obcaecati neque expedita nostrum sequi, animi accusamus officiis distinctio quod eum mollitia saepe voluptatibus, vitae dolores? Laudantium praesentium illo, aspernatur perferendis fugit dolorem, voluptatibus illum soluta corrupti consectetur eum incidunt a quo. Possimus hic, quasi praesentium ratione nostrum aperiam, tempora beatae ab, exercitationem sint illum alias? Blanditiis quibusdam sapiente perspiciatis voluptates molestiae corrupti possimus nam ab nostrum nemo fuga autem sunt dicta soluta fugiat vitae facilis nihil, dignissimos, nulla eveniet voluptatem quod minus! Harum, perferendis eum?
+  </div>  
+  <div class="" id="smith">
+    <h4>@smith</h4>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quis eius saepe officiis, doloremque nisi sit doloribus provident? Laboriosam, provident!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eos, aperiam unde possimus cupiditate quo a quibusdam asperiores mollitia illo repellendus nostrum pariatur quisquam? Eaque repudiandae blanditiis voluptate quam totam dolore corporis libero praesentium doloribus tempore, deleniti commodi reprehenderit hic natus molestias vel voluptatum fugiat distinctio. Officiis id corporis voluptatum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsa iure aut vero itaque dolorem doloremque aperiam rem aspernatur, culpa cum reiciendis deserunt. Porro error amet, tempore atque delectus nulla similique asperiores sint omnis nobis sapiente maxime blanditiis mollitia at. Totam, voluptate! Culpa, excepturi vero. Nesciunt, quidem ad. Error debitis quia, sapiente repellendus excepturi sunt adipisci possimus quae sit dolorem, qui, eius dolore consectetur ipsum accusamus sequi vitae doloribus cumque saepe deserunt autem laboriosam. Aperiam, mollitia? Itaque, laborum! Cumque deserunt adipisci dolor, id distinctio molestias libero in et? Dolore eveniet, perferendis unde minima aliquid blanditiis eum consectetur error fuga est.
+  </div> 
+   <div class="" id="jones">
+    <h4>@jones</h4>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quis eius saepe officiis, doloremque nisi sit doloribus provident? Laboriosam, provident!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ipsa atque aliquid, quos delectus, voluptatem velit consectetur doloremque accusamus, eligendi iusto modi odio. Atque, eaque nesciunt recusandae corporis consequuntur harum dignissimos nam facilis commodi reprehenderit! Eum consectetur esse tempore! Sint maxime architecto deleniti cupiditate numquam harum asperiores, dignissimos laboriosam eos.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quam iste, repellendus placeat veritatis officia, sequi perspiciatis a fugiat corrupti dignissimos ab? Exercitationem molestiae odit vero itaque non facere ducimus possimus necessitatibus placeat illo reprehenderit culpa, inventore accusamus, suscipit a sunt odio debitis aliquam veritatis voluptates consequatur quasi! Facere, ut hic molestiae nesciunt esse alias debitis, vel eligendi explicabo repellat cupiditate beatae eveniet. Dolores sunt illo sequi inventore, autem quibusdam velit aperiam. Accusamus nisi deserunt libero obcaecati vero tempore dolor temporibus iure quis modi, neque ullam illum voluptate, quasi rerum accusantium qui. Sequi, mollitia repellendus soluta amet facere non illo?
+  </div> 
+   <div class="" id="lamb">
+    <h4>@lamb</h4>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quis eius saepe officiis, doloremque nisi sit doloribus provident? Laboriosam, provident!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae asperiores repellat esse maxime libero, iure qui. Ratione nobis eius nulla! Dolores nulla nisi quisquam hic nesciunt tempora itaque? Expedita corporis consequuntur fugiat esse asperiores ad repellendus dicta. Nam nemo maiores nihil. Laudantium unde natus error pariatur? Ab tempora eaque consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem ea quas dolorum a, vel illum quo sapiente? Illo amet tempora quisquam ipsam iure, dolores reiciendis pariatur voluptatem iusto cupiditate iste explicabo beatae maiores assumenda eveniet. Aperiam iusto quos commodi laborum accusamus quas, eveniet dolores neque excepturi hic quidem. Facilis maiores tenetur corrupti consectetur soluta impedit autem, suscipit ullam possimus, perspiciatis praesentium laboriosam minima odio quaerat iste eos id hic! Atque animi, praesentium dolorem maxime qui ut! Iure, incidunt vitae, eius consequatur ex in tempora laboriosam reiciendis dolores adipisci animi dolore debitis corporis! Ullam saepe libero repellat quasi voluptas quas!
+  </div> 
+   <div class="" id="json">
+    <h4>@json</h4>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quis eius saepe officiis, doloremque nisi sit doloribus provident? Laboriosam, provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident ex unde voluptatum fugiat amet? Architecto odit aliquam ipsum perferendis dolores ipsam deleniti earum est laborum doloribus repudiandae placeat voluptatibus non quaerat officiis sit ullam nulla, illum voluptatem atque perspiciatis eius a autem quod. Non possimus modi sit ipsum accusantium quae in quidem provident ea sed id, fugit repellat reprehenderit incidunt aliquid eius ipsam enim! Ea hic ipsa nemo sint eum consequatur cumque, optio, voluptatibus laborum neque sequi dignissimos qui cum? Voluptatibus, a dolorum eius magni, saepe recusandae deserunt obcaecati assumenda sapiente et vero atque repellendus nostrum optio corporis debitis.
+  </div> 
+   <div class="" id="light">
+    <h4>@light</h4>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quis eius saepe officiis, doloremque nisi sit doloribus provident? Laboriosam, provident!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio, veniam quo qui voluptatibus quam quaerat fugit explicabo saepe, repudiandae voluptatem veritatis reiciendis doloremque quasi! Aut assumenda nemo pariatur quibusdam odit recusandae dolorem aliquid, consequatur itaque, fugit dolor non ab necessitatibus voluptatibus doloremque in cumque minima accusamus cum placeat. Quaerat?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facilis, quae sequi sunt explicabo velit vitae accusantium quaerat fugiat maxime culpa ea esse perferendis ipsam numquam commodi a facere incidunt fugit molestiae, sint possimus eum illo? Velit minus quae dolor culpa quo nostrum alias, magni atque similique optio itaque consectetur tempora ipsum labore porro. Esse eius rerum sed numquam nam suscipit maxime, veritatis repellat voluptatem error laudantium deserunt, ex ducimus odit. Esse doloremque voluptate eius rem repudiandae dolor at commodi. Incidunt reiciendis ratione illum dignissimos et maxime fuga commodi nostrum assumenda tenetur quo consequuntur, debitis consequatur facere ipsam quia quam?
+  </div>  
+  <div class="" id="real">
+    <h4>@real</h4>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quis eius saepe officiis, doloremque nisi sit doloribus provident? Laboriosam, provident!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit reiciendis veniam similique deleniti inventore aliquid animi quod necessitatibus fugit modi laudantium veritatis sequi molestias, qui consequatur nam facere! Eos omnis architecto soluta voluptate eum ratione ipsam voluptates vel. Voluptate rem voluptatem ut dolore labore velit possimus eum culpa. Asperiores labore, sapiente, hic doloribus neque minus commodi rem tempore voluptate, dolores voluptatum aut? Corporis tempore dolorum qui quod odit, cum laborum. At obcaecati harum voluptatibus quaerat voluptatum architecto vero nisi sequi iure! Quo qui pariatur omnis officiis enim magni eum? Blanditiis quos at molestiae ipsam magnam placeat iste aperiam tempore inventore!
+  </div>  
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- Call this script after bootstrap.bundle.min.js CDN -->
+<script>
+    function hideToast() {
+        var toastDOMElement = document.getElementById("liveToast");
+        var myToast = new bootstrap.Toast(toastDOMElement);
+        myToast.hide();
+    }
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example2'
+})
+
+</script>
+</html>
